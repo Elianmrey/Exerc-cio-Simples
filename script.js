@@ -14,12 +14,12 @@ let reciboPagamento = parseInt(prompt("Digitee o valor do seu pagamento"));
 
 let valorPagamento = 500;
 parseInt(valorPagamento);
+let troco = reciboPagamento - valorPagamento;
 if (reciboPagamento > valorPagamento)
 {
-  let troco = reciboPagamento - valorPagamento;
   alert("Seu Troco é "+troco);
 }
-else{
+
 let controleCalote = reciboPagamento < valorPagamento;
 
 if (controleCalote == true)
@@ -28,7 +28,5 @@ if (controleCalote == true)
 }
 else
 {
-  alert("Tudo certo, voce pode entrar");
+   alert("Tudo certo, voce pode entrar");
 }
-}
-alert("Tudo certo, voce pode entrar");
